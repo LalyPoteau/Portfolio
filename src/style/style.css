@@ -204,6 +204,15 @@ header ul{
     bottom : 20px;
     right : 20px;
     border-radius: 52rem;
+    transition : 0.5s;
+}
+
+.top_btn:hover{
+width : 50px;
+height : 50px;
+    text-align: center;
+    align-content: center;
+    color: #EAE0C8;
 }
 
 
@@ -263,3 +272,4 @@ footer span {
     align-self: center;
     color : #4C494D;
 }
+
