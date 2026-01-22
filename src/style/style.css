@@ -1,0 +1,198 @@
+/* Base général */
+
+body{
+    margin:0 auto;
+    padding : 0;
+    background-color: #EAE0C8;
+    font-family: "Lora",serif;
+}
+
+section {
+    background-color: #ECC8AF;
+    max-width: 1280px;
+    margin: 0 auto;
+    align-items: center;
+    
+
+}
+
+section h1{
+    margin-left: 25px;
+    font-size: 4rem;
+    margin-right: 25px;
+    border-bottom: 8px solid #D95F4D;
+    border-radius: 5px;
+}
+
+
+
+section h2{
+    font-size: 3rem;
+    margin-left: 45px;
+}
+
+h1,h2{
+    font-family: "Bebas Neue", sans-serif;
+    color : #D95F4D;
+}
+
+
+/*header */
+
+header{
+    font-family: "Bebas Neue", sans-serif;
+    color : #D95F4D;
+    display: flex;
+    align-items:center;
+    
+    flex-direction: row;
+    box-shadow: 0px 7px 14px 3px rgba(0,0,0,0.57);
+}
+
+header h1{
+    margin-left: 25px;
+     font-size: 3rem;
+}
+
+header a{
+    color : #D95F4D;
+    text-decoration: none;
+    font-size: 3rem;
+    
+}
+
+header a:hover{
+    color : #D95F4D;
+    text-decoration: none;
+    font-size: 3rem;
+}
+header a {
+  background: linear-gradient(currentColor 0 0) 
+    bottom left/
+    var(--underline-width, 0%) 0.1em
+    no-repeat;
+  color: #D95F4D;;
+  display: inline-block;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: background-size 0.5s;
+}
+
+header a:hover {
+  --underline-width: 100%;
+}
+header ul{
+    display: flex;
+    flex-direction: row;  
+    align-content: space-around;  
+}
+
+
+/* Projets */
+
+.Projets{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.Main, .Main img{
+    border-radius: 15px;
+    width : 350px;
+    height : 250px;
+    margin : 15px;
+    position : relative
+}
+
+.Main img{
+    object-fit: cover;
+}
+
+.Hover{
+    width : 350px;
+    height : 250px;
+    margin : 15px;
+    display: none;
+    position: absolute;
+    top : 0;
+    left :0;    
+    border-radius: 15px;
+    background-color: #d9604ded;
+}
+
+.hover-content{
+    color : #ECC9B0;
+    text-decoration: none;
+}
+
+.Hover h3 ,.Hover span,.Hover p{
+    margin-left: 5px; 
+}
+
+.Hover ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Hover ul, li{
+    list-style-type: none;
+    align-items: baseline;
+    margin : 5px;
+}
+
+
+
+.Main:hover .Hover{
+    display: block;
+}
+
+
+/*Btn top */
+.top_btn{
+    background: radial-gradient(circle,rgba(217, 95, 77, 1) 24%, rgba(217, 95, 77, 0.68) 76%);
+    color : #ECC9B0;
+    width: 40px;
+    height : 40px;
+    text-align: center;
+    aspect-ratio: 1/1;
+    font-size: 2rem;
+    margin : 0 auto;
+    position: fixed;
+    bottom : 20px;
+    right : 20px;
+    border-radius: 52rem;
+}
+
+
+/* Footer*/
+
+footer {
+    background: radial-gradient(circle,rgba(217, 95, 77, 1) 24%, rgba(217, 95, 77, 0.68) 76%);
+    color : #ECC9B0;
+    height : 250px;
+    display: flex;
+    flex-direction: column;
+    padding : 15px;
+
+}
+
+footer a{
+    color : #4C494D;
+    font-size: 1.5rem;
+    text-decoration: none;
+      background: linear-gradient(currentColor 0 0) 
+    bottom left/
+    var(--underline-width, 0%) 0.1em
+    no-repeat;
+  color: #4C494D;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-size 0.5s;
+}
+
+
+
+footer a:hover{
+      --underline-width: 100%;
+}
