@@ -102,7 +102,8 @@ header ul{
     width : 350px;
     height : 250px;
     margin : 15px;
-    position : relative
+    position : relative;
+   
 }
 
 .Main img{
@@ -113,12 +114,14 @@ header ul{
     width : 350px;
     height : 250px;
     margin : 15px;
-    display: none;
     position: absolute;
     top : 0;
     left :0;    
     border-radius: 15px;
     background-color: #d9604ded;
+    opacity: 0;
+    transition: opacity 0.5s;
+    
 }
 
 .hover-content{
@@ -144,14 +147,53 @@ header ul{
 
 
 .Main:hover .Hover{
+    
     display: block;
+    opacity: 1;
 }
 
+/* Partie About me */
+.AboutMe{
+    display: flex;
+    color : #4C494D;
+}
+
+.AboutMe #text{
+    background: radial-gradient(circle,rgba(217, 95, 77, 0.668) 24%, rgba(217, 95, 77, 1) 76%);
+    flex-basis: 40%;
+    border-radius: 15px;
+    margin-left : 25px;
+    padding : 25px;
+}
+
+.AboutMe #text ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.AboutMe #text li{
+    background-color: #ECC9B0;
+    color: #D95F4D;
+    border-radius: 1rem;
+    margin-left: 75px;
+    width : 80px;
+    text-align: center;
+    padding : 5px 20px 5px 20px;
+}
+
+.AboutMe #text::before, 
+.AboutMe #text::after {
+    content: '> > > > > > > > > > > > > > > > ';
+    color : #4C494D;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
 
 /*Btn top */
 .top_btn{
-    background: radial-gradient(circle,rgba(217, 95, 77, 1) 24%, rgba(217, 95, 77, 0.68) 76%);
-    color : #ECC9B0;
+        background: radial-gradient(circle,rgba(217, 95, 77, 0.668) 24%, rgba(217, 95, 77, 1) 76%);
+    color : #4C494D;
     width: 40px;
     height : 40px;
     text-align: center;
@@ -168,7 +210,7 @@ header ul{
 /* Footer*/
 
 footer {
-    background: radial-gradient(circle,rgba(217, 95, 77, 1) 24%, rgba(217, 95, 77, 0.68) 76%);
+    background: radial-gradient(circle,rgba(217, 95, 77, 0.668) 24%, rgba(217, 95, 77, 1) 76%);
     color : #ECC9B0;
     height : 250px;
     display: flex;
@@ -191,8 +233,33 @@ footer a{
   transition: background-size 0.5s;
 }
 
-
+footer::before, footer::after{
+    content: '> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > ';
+    color : #4C494D;
+    font-size: 2.5rem;
+} 
 
 footer a:hover{
-      --underline-width: 100%;
+      --underline-width: 10%;
+}
+
+#btn_mail{
+    align-self: center;
+    background-color: #D95F4D;
+    border-radius: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    width :50%;
+    margin-bottom: 45px;
+    transition: background-color 0.5s;
+}
+
+#btn_mail:hover{
+    
+    background: radial-gradient(circle,rgba(217, 96, 77, 0.516) 24%, rgba(217, 95, 77, 1) 76%);
+}
+footer span {
+    align-self: center;
+    color : #4C494D;
 }
