@@ -111,6 +111,8 @@ header ul{
     object-fit: cover;
 }
 
+
+
 .Hover{
     width : 350px;
     height : 250px;
@@ -284,4 +286,169 @@ footer span {
     align-self: center;
     color : #4C494D;
 }
+
+/* Responsive - Phones */
+@media (max-width: 600px) {
+    section {
+        max-width: 100%;
+
+    }
+
+    section h1{
+        font-size: 2.5rem;
+;
+        border-bottom-width: 6px;
+    }
+
+    section h2{
+        font-size: 2rem;
+
+    }
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    header h1{
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    header ul{
+        margin: 8px 0 12px 0;
+    }
+
+    header a{
+        font-size: 1.1rem;
+        margin-left: 8px;
+        flex-direction: column;
+    }
+
+    .Projets{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .Main{
+        position: relative;
+        width: calc(100% - 32px);
+        margin: 10px 0;
+        border-radius: 12px;
+        display: block;
+           margin-bottom: 170px;
+    }
+
+    .Main img{
+        display: block;
+        width: 100%;
+        height: 250px; /* force rectangle like desktop */
+        border-radius: 12px;
+        object-fit: cover;
+     
+    }
+
+    .Hover{
+        position:absolute;
+        top : 270px;
+        width: calc(100% - 32px);
+        margin : 10px 0;
+        opacity: 1;
+        border-radius: 12px;
+        background-color: #ffffff00;
+        transition: none;
+        padding: 12px;
+    }
+
+
+    .hover-content{
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .hover-content ul li{
+          margin-left: 8px;
+        width: auto;
+        padding: 6px 10px;
+        color: #ECC9B0;
+    border-radius: 1rem;
+    background-color: #D95F4D;
+    }
+
+    .Hover h3{ margin: 0 0 6px 0; font-size: 1.15rem; }
+    .Hover span{ display: block; margin-bottom: 6px; }
+    .Hover p{ margin: 0 0 6px 0; }
+
+    .Hover h3{ font-size: 1.2rem; }
+
+    .AboutMe{
+       
+        flex-direction: column;
+        padding: 8px 0;
+    }
+
+    .AboutMe #text{
+        flex-basis: auto;
+        margin-left: 0;
+        margin-bottom: 12px;
+        padding: 14px;
+        border-radius: 12px;
+    }
+
+    .AboutMe #text li{
+        margin-left: 8px;
+        margin-top: 8px;
+        width: auto;
+        padding: 6px 10px;
+    }
+
+    #img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #img img{
+        padding-left: 0;
+        width: 60%;
+    }
+
+    footer{
+        height: auto;
+        padding: 18px;
+    }
+
+    footer a{
+        font-size: 1.1rem;
+        display: block;
+        margin: 6px 0;
+    }
+
+    #btn_mail{
+        width: 90%;
+        font-size: 1.6rem;
+    }
+
+    .top_btn{
+        width: 44px;
+        height: 44px;
+        font-size: 1.4rem;
+        right: 14px;
+        bottom: 14px;
+    }
+#img{
+    display : none;
+}
+    .AboutMe #text::before, 
+.AboutMe #text::after ,footer::before, footer::after    {
+    content: '' ;
+
+}
+}
+
 
